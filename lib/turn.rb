@@ -18,10 +18,10 @@ return true if ["X", "O"].include?(board[position])
 end
 
 def input_to_index(input)
-  index = input.to_i - 1
+  position = input.to_i - 1
 end
 
-def move(board, index, token ="X")
+def move(board, position, token ="X")
   board[index] = token
   board
 end
