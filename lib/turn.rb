@@ -28,8 +28,7 @@ def turn(board)
   else
     turn(board)
 end
-
-
+end
 
 def position_taken?(board, position)
 return false if [" ", ""].include?(board[position])
