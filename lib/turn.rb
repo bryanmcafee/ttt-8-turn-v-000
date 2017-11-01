@@ -17,10 +17,10 @@ def turn(board)
 end
 
 
-def valid_move?(board, position)
-move=position.to_i
+def valid_move?(board, index)
+move=index.to_i
 test = move - 1
-test.between?(0,8) && !(position_taken?(board, test))
+test.between?(0,8) && !(index_taken?(board, test))
 end
 
 def position_taken?(board, position)
